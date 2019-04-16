@@ -1,0 +1,58 @@
+.Header {    
+    width: 100%;
+    font-family: Courier New,Arial,sans-serif;
+    .header-text {
+        margin-left: 3%;
+        display: inline-block;
+        border-radius: 5px;
+        background: black;
+        width: 50%;
+        vertical-align: top;
+        position: relative;
+        padding: 1%;
+        .hello {
+            font-size: 50px;
+            font-weight: 800;
+        }
+        .intro {
+            font-size: 20px;
+        }
+        color: #00ff00;
+    }
+
+    .cursor {
+        content: "";
+        top: 0;
+        right: -15px;
+        /* Remove display: inline-block if not required to be on the same line as text etc */
+        display: inline-block;
+        background-color: #00ff00;
+        vertical-align: top;
+        width: 9px;
+        /* Set height to the line height of .text */
+        height: 20px;
+        /* 
+        Animation paramaters:
+        blink = animation-name, 
+        1s = animation-duration, 
+        step-end = animation-timing-function,
+        infinite = animation-iteration-count
+        */
+        -webkit-animation: blink 1s step-end infinite;
+        animation: blink 1s step-end infinite;
+      }
+      
+      @-webkit-keyframes blink {
+        0% { opacity: 1.0; }
+        50% { opacity: 0.0; }
+        100% { opacity: 1.0; }
+      }
+      
+      @keyframes blink {
+        0% { opacity: 1.0; }
+        50% { opacity: 0.0; }
+        100% { opacity: 1.0; }
+      }
+
+
+}

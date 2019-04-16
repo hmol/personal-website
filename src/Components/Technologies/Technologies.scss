@@ -1,0 +1,25 @@
+.Technologies {    
+    margin-top: 5%;
+    margin-left: 13%;
+    margin-top: 3%;
+    width: 50%;
+    // height: 500px;
+
+    .projects-header {
+        font-size: 35px;
+        font-weight: 800;
+    }
+
+    .techitems-container {
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .tech-items-column {
+        display: inline-block;
+    }
+
+    .tech-items-column:nth-child(1) {
+        margin-right: 13%;
+    }
+}

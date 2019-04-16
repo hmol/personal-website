@@ -1,0 +1,25 @@
+.project {
+
+    .customer-lead, .customer, .date-start-lead, .date-start, .date-end-lead, .date-end, .about-lead, .about {
+        display: inline-block;
+    }
+    margin-top: 2%;
+    width: 50%;
+
+    .calendar-icon {
+        background: url('./calendar.svg') center center/cover no-repeat;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 1%;
+        vertical-align: middle;
+    }
+    .date-seperator {
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .customer {
+        font-weight: 600;
+    }
+}

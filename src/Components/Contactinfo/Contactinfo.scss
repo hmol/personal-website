@@ -1,0 +1,27 @@
+.contactinfo {    
+    margin-top: 5%;
+    margin-left: 13%;
+
+    .resume-container {
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    .resume-link {
+        border: black solid 1px;
+        cursor: pointer;
+        padding: 12px;
+    }
+
+    .resume-link:hover {
+        background-color: rgb(240, 239, 239);
+    }
+
+    .pdf-icon {
+        background: url('./pdf.png') center center/cover no-repeat;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 11px;
+    }
+}

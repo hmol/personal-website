@@ -1,0 +1,94 @@
+.tech-item {
+    width: 100%;
+    margin-top: 5px;
+    .name {
+        display: inline-block;
+        width: 130px;
+    }
+
+    .dark {
+        display: inline-block;
+    }
+    .white {
+        display: inline-block;
+        color: lightgray;
+    }
+
+    .cursor-dark {
+        content: "";
+        top: 0;
+        display: inline-block;
+        background-color: black;
+        vertical-align: top;
+        width: 9px;
+        height: 1em;
+      }   
+      .cursor-light {
+        content: "";
+        top: 0;
+        display: inline-block;
+        background-color: lightgray;
+        vertical-align: top;
+        width: 9px;
+        height: 1em;
+      }
+
+      div {
+        display: inline-block;
+      }
+
+      .track-visibility-container {
+        margin-bottom: 5px;
+        display: inline-block;
+        margin-left: 3%;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 9px solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0px; /* Adjust as needed */
+        background: lightgray;
+        width: 54px;
+        height: 1em;
+      }
+
+      div > .level-empty {
+        display: inline-block;
+        margin-left: 3%;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 9px solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0px; /* Adjust as needed */
+        background: lightgray;
+        width: 54px;
+      }
+
+      // div > .level-empty {
+      //   display: inline-block;
+      //   margin-left: 3%;
+      //   vertical-align: middle;
+      //   overflow: hidden; /* Ensures the content is not revealed until the animation */
+      //   border-right: 9px solid transparent; /* The typwriter cursor */
+      //   white-space: nowrap; /* Keeps the content on a single line */
+      //   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      //   letter-spacing: 0px; /* Adjust as needed */
+      // }
+
+      div > .level {
+        display: inline-block;
+        margin-left: 3%;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 9px solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0px; /* Adjust as needed */
+        animation: 
+           typing 1s steps(16, end),
+    }
+
+      /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+}
