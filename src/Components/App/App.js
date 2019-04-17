@@ -4,7 +4,10 @@ import Header from '../Header/Header'
 import Technologies from '../Technologies/Technologies'
 import Projects from '../Projects/Projects'
 import Contactinfo from '../Contactinfo/Contactinfo'
-
+import Music from '../Contactinfo/Music/Music';
+import './C64_Pro_Mono-STYLE.woff'
+import './C64_Pro_Mono-STYLE.woff2'
+// https://medium.com/@ally_20818/multi-language-text-with-react-native-react-context-b76d5677346d
 class App extends Component {
 
   render() {
@@ -14,6 +17,7 @@ class App extends Component {
         <Projects></Projects>
         <Technologies></Technologies>
         <Contactinfo></Contactinfo>
+        <Music></Music>
       </div>
     );
   }

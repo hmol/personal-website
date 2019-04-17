@@ -10,10 +10,17 @@
         border: black solid 1px;
         cursor: pointer;
         padding: 12px;
+        box-shadow: 2px 2px 2px #666;
     }
 
     .resume-link:hover {
         background-color: rgb(240, 239, 239);
+        box-shadow: 2px 2px 2px rgb(144, 144, 144);
+    }
+
+    .resume-link:active {
+        background-color: rgb(240, 239, 239);
+        box-shadow: 0px 0px 0px;
     }
 
     .pdf-icon {

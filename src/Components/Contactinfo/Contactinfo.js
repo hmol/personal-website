@@ -2,6 +2,7 @@ import React from 'react';
 import './Contactinfo.scss';
 import Header from '../Shared/Header/Header';
 import ContactItem from './ContactItem/ContactItem';
+import Music from './Music/Music';
 
 
 class Contactinfo extends React.Component {
@@ -26,9 +27,7 @@ class Contactinfo extends React.Component {
                     <span className="pdf-icon"></span>
                     Download resume
                 </a>
-            </div>
-            
-            <iframe src="https://open.spotify.com/embed/user/hmol_/playlist/4o8JeOveTdtRBXFGFmeKxY" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>            
         </div>
         );  }
 }

@@ -8,11 +8,11 @@ class Header extends React.Component {
         <div className="Header">
             <Face/>
             <div className="header-text">
-                <div className="hello anim-typewriter">Hello!</div>
+                <div className="hello">Hello!</div>
                 <div className="intro">
-                    <p>
+                    <span>
                         I’m Henrik Molnes, a developer living in Oslo, currently working as a consultant at ITverket.<span className="cursor"></span>
-                    </p>
+                    </span>
                 </div>
             </div>
         </div>

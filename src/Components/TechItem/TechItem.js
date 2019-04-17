@@ -5,7 +5,7 @@ import TrackVisibility from 'react-on-screen';
 
 class TechItem extends React.Component {
 
-    maxLevel = 6;
+    maxLevel = 10;
     dark = [];
     light = [];
     levelArray = [
@@ -14,14 +14,22 @@ class TechItem extends React.Component {
             <div className="cursor-light" key="2"></div>,
             <div className="cursor-light" key="3"></div>,
             <div className="cursor-light" key="4"></div>,
-            <div className="cursor-light" key="5"></div>
-    ]
+            <div className="cursor-light" key="5"></div>,
+            <div className="cursor-light" key="6"></div>,
+            <div className="cursor-light" key="7"></div>,
+            <div className="cursor-light" key="8"></div>,
+            <div className="cursor-light" key="9"></div>
+    ];
     // ms-sqlserver 12
 
     elements;
 
     constructor(props) {
         super(props);
+        this.state = {
+            counter: 0
+        };
+        this.onMouseInteraction = this.onMouseInteraction.bind(this);
 
         for (let index = 0; index < this.props.level; index++) {
             this.levelArray[index] = <div className="cursor-dark" key={index}></div>;
@@ -40,13 +48,24 @@ class TechItem extends React.Component {
         return name;
     }
 
-    componentDidMount() {
-        console.log("test balle");
+    onMouseInteraction() {
+        this.setState(state => ({
+            counter: state.counter + 1
+        })); 
     }
-    
+
+    getId = () => {
+        const id = new Date().getTime();
+        console.log(id);
+        return id;
+    };
+
     render() {
         return (
-                <div className="tech-item">
+                <div className="tech-item" 
+                    onClick={this.onMouseInteraction} 
+                    onMouseEnter={this.onMouseInteraction} 
+                    key={this.getId()} >
                     <div className="name">
                         {this.getNameWithDots(this.props.name)}
                     </div>
