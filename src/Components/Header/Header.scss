@@ -15,13 +15,14 @@
         position: relative;
         padding: 2%;
         .hello {
-            font-family: c64;
-            font-size: 35px;
+            font-family: c64;           
             font-weight: 500;        
         }
         .intro {
             font-size: 20px;
+            font-family: c64;
             margin-top: 2%;
+            line-height: 21pt;
         }
         color: #00ff00;
         box-shadow: 5px 5px 5px #666;
@@ -43,6 +44,7 @@
 
 
     .cursor {
+        vertical-align: baseline;
         content: "";
         top: 0;
         right: -15px;
@@ -50,9 +52,9 @@
         display: inline-block;
         background-color: #00ff00;
         vertical-align: top;
-        width: 9px;
+        width: 12px;
         /* Set height to the line height of .text */
-        height: 20px;
+        height: 22px;
         /* 
         Animation paramaters:
         blink = animation-name, 
