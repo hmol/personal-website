@@ -14,15 +14,23 @@
         vertical-align: top;
         position: relative;
         padding: 2%;
+        @media screen and (max-width: 900px) {
+          padding: 3%;
+        }
         .hello {
             font-family: c64;           
-            font-weight: 500;        
+            font-weight: 500;
         }
         .intro {
             font-size: 20px;
             font-family: c64;
             margin-top: 2%;
             line-height: 21pt;
+
+            @media screen and (max-width: 900px) {
+              font-size: 17px;
+              line-height: 18pt;
+            }
         }
         color: #00ff00;
         box-shadow: 5px 5px 5px #666;
