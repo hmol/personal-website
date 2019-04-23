@@ -4,7 +4,7 @@ class ContactItem extends React.Component {
     render() {
         return (
         <div className="contact-item">
-            <a href={this.props.url}>
+            <a href={this.props.url} target="_blank">
                 {this.props.text}
             </a>
         </div>

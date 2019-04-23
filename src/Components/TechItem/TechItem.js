@@ -56,7 +56,6 @@ class TechItem extends React.Component {
 
     getId = () => {
         const id = new Date().getTime();
-        console.log(id);
         return id;
     };
 

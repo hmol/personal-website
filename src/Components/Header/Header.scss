@@ -1,6 +1,11 @@
 .Header {    
     width: 100%;
     font-family: Courier New,Arial,sans-serif;
+   
+    .stats {
+      font-family: c64;   
+    }
+    
     .header-text {
         margin-left: 3%;
         display: inline-block;
@@ -30,6 +35,16 @@
             @media screen and (max-width: 900px) {
               font-size: 17px;
               line-height: 18pt;
+            }
+
+            a {
+              color: #00ff00;
+              text-decoration-style: underline;              
+            }
+            a:hover {
+              color: #00ff00;
+              text-decoration-style: dashed;
+              text-shadow: 2px 2px blue;
             }
         }
         color: #00ff00;

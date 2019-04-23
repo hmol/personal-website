@@ -1,5 +1,6 @@
 .face-container {
     width: 10%;
+    height: 10%;
     display: inline-block;
     .face {
         background: url('./face2.jpg') center center/cover no-repeat;
@@ -8,5 +9,48 @@
         position: relative;
         width: 100%;
         border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 0 12px 0 black;
     }
+
+    .face:hover {
+        box-shadow: 0 0 5px 0 black;
+    }
+
+    .face:active {
+        box-shadow: 0 0 3px 0 black;
+    }
+
+
+    .red-eye {
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        opacity: .25;
+
+        background-color: red;
+        position: absolute;
+        left: calc(10% - 0.1%);
+        top: calc(10% - 1.5%);
+        -webkit-animation: up-right 1s infinite;
+        -moz-animation: up-right 1s infinite;
+        -o-animation: up-right 1s infinite;
+        animation: up-right 1s infinite;
+    }
+
+    @keyframes up-right {
+        0% {
+            transform: scale(1);
+            opacity: .25
+        }
+        50% {
+            transform: scale (1, 5);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: .25;
+        }
+    }
+
 }
