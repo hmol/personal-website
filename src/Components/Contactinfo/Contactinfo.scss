@@ -1,6 +1,11 @@
 .contactinfo {    
     margin-top: 5%;
     margin-left: 13%;
+    
+    @media screen and (max-width: 900px) {
+        margin-left: 0%;
+        width: 100%;
+    }
 
     .resume-container {
         margin-top: 4%;

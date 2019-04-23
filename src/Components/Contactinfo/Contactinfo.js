@@ -27,7 +27,7 @@ class Contactinfo extends React.Component {
                     <span className="pdf-icon"></span>
                     Download resume
                 </a>
-            </div>            
+            </div>
         </div>
         );  }
 }

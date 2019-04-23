@@ -2,6 +2,10 @@
     .music-container {
         position: relative;
         left: -5%;
+        
+        @media screen and (max-width: 900px) {
+            margin-top: 21%;
+        }
 
         .tone {
             background: url('./tone.svg') center center/cover no-repeat;
