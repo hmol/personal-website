@@ -1,7 +1,6 @@
 import React from 'react';
 import './Header.scss';
 import Face from '../Face/Face';
-import Ekg from '../Ekg/Ekg';
 
 class Header extends React.Component {
 
