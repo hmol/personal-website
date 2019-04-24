@@ -11,6 +11,8 @@
         border-radius: 50%;
         cursor: pointer;
         box-shadow: 0 0 12px 0 black;
+        animation: faceskew 0.1s step-end 4;
+        animation-delay: 1s;
     }
 
     .face:hover {
@@ -18,7 +20,19 @@
     }
 
     .face:active {
-        box-shadow: 0 0 3px 0 black;
+        box-shadow: 0 0 3px 0 black;        
+    }
+
+    @keyframes faceskew {
+        0% {
+            transform: skewX(0deg);
+        }
+        50% {
+            transform: skewX(-2deg);
+        }
+        100% {
+            transform: skewX(0deg);
+        }
     }
 
 

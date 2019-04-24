@@ -26,8 +26,7 @@ class Music extends React.Component {
     render() {
         return (
             <div className="music">
-                <div className="music-container">
-                    <span className="tone" onClick={this.handleMusicClick}></span>
+                <div className="music-container">                   
                     {this.state.displayMusic 
                         ? <div className="spotify">
                             <p>I also like music. Here are some of my favourites 😎</p>
@@ -41,6 +40,7 @@ class Music extends React.Component {
                             </div>
                         :   <div ref={this.bottomElement} />
                     }
+                    <span className="tone" onClick={this.handleMusicClick}></span>
                 </div>
             </div>
         )

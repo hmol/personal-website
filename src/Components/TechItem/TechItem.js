@@ -20,7 +20,6 @@ class TechItem extends React.Component {
             <div className="cursor-light" key="8"></div>,
             <div className="cursor-light" key="9"></div>
     ];
-    // ms-sqlserver 12
 
     elements;
 

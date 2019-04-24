@@ -5,6 +5,7 @@
         
         @media screen and (max-width: 900px) {
             margin-top: 21%;
+            left: 0;
         }
 
         .tone {
@@ -13,9 +14,12 @@
             width: 20px;
             display: block;
             position: absolute;
-            bottom: 0;
-            margin-bottom: 1%;
+            bottom: 0;            
             filter: blur(5px);
+            @media screen and (max-width: 900px) {
+                position: relative;
+                margin-bottom: 2%;
+            }
         }
 
         .tone:hover {
@@ -26,6 +30,10 @@
         .spotify {
             margin-top: 5%;
             margin-left: 18%;
+            @media screen and (max-width: 900px) {
+                margin-left: 0;
+                margin-bottom: 4%;
+            }
         }
     }
 }

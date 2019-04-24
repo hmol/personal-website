@@ -84,29 +84,31 @@ class Header extends React.Component {
             <Face handler = {this.handler}/>
             {!this.state.displayStats ? (
             <div className="header-text">
-                <div className="intro">
-                    <span>
-                        {this.state.introtext}<span className="cursor"></span>
-                    </span>
+                <div className="intro">                    
+                    {this.state.introtext}<span className="cursor"></span>                    
                 </div>
             </div>
             ) : (
                 <div className="header-text">
-                    <div className="intro">
-                    <span>
-                        Carbon based lifeform
-                        <br/>
-                        Species: Homo Sapiens
-                        <br/>
-                        Subsistence: <a href="https://www.google.com/search?q=C8H10N4O2" target="_blank">C8H10N4O2</a> 
-                        <br/>                        
-                        Age: { this.state.milliseconds } ms
-                        <br/>
-                        Height: 1900 mm
-                        <br/>
-                        Core temperature: { this.state.temperature } °C
-                    </span>
-
+                    <div className="stats">
+                        <div className="stat-1">
+                            Carbon based lifeform
+                        </div>
+                        <div className="stat-2">
+                            Species: Homo Sapiens
+                        </div>
+                        <div className="stat-3">
+                            Subsistence: <a href="https://www.google.com/search?q=C8H10N4O2" target="_blank">C8H10N4O2</a> 
+                        </div>
+                        <div className="stat-4">
+                            Age: { this.state.milliseconds } ms
+                        </div>
+                        <div className="stat-5">
+                            Height: 1900 mm
+                        </div>
+                        <div className="stat-6">
+                            Core temperature: { this.state.temperature } °C
+                        </div>
                     </div>
                 </div>
             )}
