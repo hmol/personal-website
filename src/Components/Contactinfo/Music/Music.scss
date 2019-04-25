@@ -8,6 +8,9 @@
             left: 0;
         }
 
+        .track-visibility-container {
+            animation: toneskew 2s step-end 50;
+        }
         .tone {
             background: url('./tone.svg') center center/cover no-repeat;
             height: 20px;
@@ -16,6 +19,8 @@
             position: absolute;
             bottom: 0;            
             filter: blur(5px);
+            animation: toneskew 2s step-end 50;
+            // animation-delay: 2.28s;
             @media screen and (max-width: 900px) {
                 position: relative;
                 margin-bottom: 2%;
@@ -25,7 +30,7 @@
         .tone:hover {
             filter: blur(1px);
             cursor: pointer;
-        }
+         }
 
         .spotify {
             margin-top: 5%;
@@ -33,6 +38,24 @@
             @media screen and (max-width: 900px) {
                 margin-left: 0;
                 margin-bottom: 4%;
+            }
+        }
+
+        @keyframes toneskew {
+            0% {
+                transform: skewX(0deg);
+            }
+            25% {
+                transform: skewX(-8deg);
+            }
+            50% {
+                transform: skewX(0deg);
+            }
+            75% {
+                transform: skewX(8deg);
+            }
+            100% {
+                transform: skewX(0deg);
             }
         }
     }

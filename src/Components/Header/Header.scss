@@ -14,16 +14,20 @@
         border-radius: 5px;
         background: black;
         width: 50%;
-        @media screen and (max-width: 900px) {
-          width: 100%;
-          margin-left: 0%;
-        }
         vertical-align: top;
         position: relative;
         padding: 2%;
+        min-width: 330px;
+        
         @media screen and (max-width: 900px) {
           padding: 3%;
+          width: 60%;
+          margin-left: 0%;
         }
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+
         .hello {
             font-family: c64;           
             font-weight: 500;
@@ -38,7 +42,6 @@
             @media screen and (max-width: 900px) {
               font-size: 17px;
               line-height: 18pt;
-              height: 144px;
             }
 
             a {
@@ -51,6 +54,10 @@
               text-shadow: 2px 2px blue;
             }
         }
+
+        .stats {
+            font-size: 84%;
+        }
         color: #00ff00;
         box-shadow: 5px 5px 5px #666;
     }
@@ -62,13 +69,21 @@
       background: blue;
     } 
 
-    .intro > span::selection {
+    .intro::selection {
       background: blue;
     }
-    .intro > span::selection {
-      background: blue;
-    } 
 
+    .stats > div::selection {
+      background: blue;
+    }
+
+    .stats > div a::selection {
+      background: blue;
+    }
+
+    .stats > div a sub::selection {
+      background: blue;
+    }
 
     .cursor {
         vertical-align: baseline;
@@ -110,46 +125,7 @@
         white-space:nowrap;
         overflow: hidden;
         visibility: hidden;
-      }
-
-      $type_time: 2s;
-      $type_steps: 50;
-      $type_delay: $type_time - 0.5;
-
-      .stat-1 {
-        animation: type $type_time steps($type_steps, end) 1;	
-        animation-fill-mode: forwards;
-      }
-      
-      .stat-2 {
-        animation: type $type_time steps($type_steps, end) 1;	
-        animation-delay: $type_delay;
-        animation-fill-mode: forwards;
-      }
-
-      .stat-3 {
-        animation: type $type_time steps($type_steps, end) 1;	
-        animation-delay: $type_delay * 2;
-        animation-fill-mode: forwards;
-      }
-
-      .stat-4 {
-        animation: type $type_time steps($type_steps, end) 1;	
-        animation-delay: $type_delay * 3;
-        animation-fill-mode: forwards;
-      }
-
-      .stat-5 {
-        animation: type $type_time steps($type_steps, end) 1;	
-        animation-delay: $type_delay * 4;
-        animation-fill-mode: forwards;
-      }
-
-      .stat-6 {
-        animation: type $type_time steps($type_steps, end) 1;	
-        animation-delay: $type_delay * 5;
-        animation-fill-mode: forwards;
-      }
+      } 
 
       @keyframes type{
         from
@@ -161,4 +137,81 @@
           visibility: visible;
         }
       }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #00ff00; }
+      }
+
+      $type_time: 2s;
+      $type_steps: 50;
+      $type_delay: $type_time - 1;
+
+      .line-0 {
+        animation: type $type_time steps($type_steps, end) 1;
+                   //blink-caret $type_time steps($type_steps*4, end) 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.1;
+      }
+      
+      .line-1 {
+        animation: type $type_time steps($type_steps, end) 1;	
+        animation-delay: $type_delay;
+        animation-fill-mode: forwards;
+      }
+
+      .line-2 {
+        animation: type $type_time steps($type_steps, end) 1;	
+        animation-delay: $type_delay * 2;
+        animation-fill-mode: forwards;
+      }
+
+      .line-3 {
+        animation: type $type_time steps($type_steps, end) 1;	
+        animation-delay: $type_delay * 3;
+        animation-fill-mode: forwards;
+      }
+
+      .line-4 {
+        animation: type $type_time steps($type_steps, end) 1;	
+        animation-delay: $type_delay * 4;
+        animation-fill-mode: forwards;
+      }
+
+      .line-5 {
+        animation: type $type_time steps($type_steps, end) 1;	
+        animation-delay: $type_delay * 5;
+        animation-fill-mode: forwards;
+      }
+
+      .line-6 {
+        animation: type $type_time steps($type_steps, end) 1;	
+        animation-delay: $type_delay * 6;
+        animation-fill-mode: forwards;
+      }
+
+      .line-7 {
+        animation: type $type_time steps($type_steps, end) 1;	
+        animation-delay: $type_delay * 7;
+        animation-fill-mode: forwards;
+      }
+
+      .line-8 {
+        animation: type $type_time steps($type_steps, end) 1;	
+        animation-delay: $type_delay * 8;
+        animation-fill-mode: forwards;
+      }
+
+      .line-9 {
+        animation: type $type_time steps($type_steps, end) 1;	
+        animation-delay: $type_delay * 9;
+        animation-fill-mode: forwards;
+      }
+
+      .line-10 {
+        animation: type $type_time steps($type_steps, end) 1;	
+        animation-delay: $type_delay * 10;
+        animation-fill-mode: forwards;
+      }
+
 }

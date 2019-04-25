@@ -10,6 +10,10 @@ import './C64_Pro_Mono-STYLE.woff2'
 // https://medium.com/@ally_20818/multi-language-text-with-react-native-react-context-b76d5677346d
 class App extends Component {
 
+  componentDidMount() {
+    console.log('I\'m sorry, Dave. I\'m afraid I can\'t do that.');
+  }
+
   render() {
     return ( 
       <div className="app">
@@ -17,7 +21,7 @@ class App extends Component {
         <Projects></Projects>
         <Technologies></Technologies>
         <Contactinfo></Contactinfo>
-        <Music></Music>
+        <Music></Music> 
       </div>
     );
   }

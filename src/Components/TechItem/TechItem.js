@@ -37,7 +37,7 @@ class TechItem extends React.Component {
 
     maxlength = 13;
     getNameWithDots(name) {
-        if(name.length == this.maxlength) {
+        if(name.length === this.maxlength) {
             return name;
         }
         var remainer = this.maxlength - name.length;

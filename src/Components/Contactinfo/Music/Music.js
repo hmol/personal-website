@@ -1,5 +1,6 @@
 import React from 'react';
 import './Music.scss';
+import TrackVisibility from 'react-on-screen'; 
 
 class Music extends React.Component {
     constructor(props) {
@@ -29,18 +30,24 @@ class Music extends React.Component {
                 <div className="music-container">                   
                     {this.state.displayMusic 
                         ? <div className="spotify">
-                            <p>I also like music. Here are some of my favourites 😎</p>
+                            <p>I also like music. Here are some of my favourites <span role="img" aria-label="emoji">😎</span></p>
                             <iframe src="https://open.spotify.com/embed/user/hmol_/playlist/4o8JeOveTdtRBXFGFmeKxY" 
                                     width="300" 
                                     height="380" 
                                     allowtransparency="true" 
+                                    title="spotify-iframe"
                                     allow="encrypted-media">
                             </iframe>
-                            <div ref={this.bottomElement} />
+
                             </div>
-                        :   <div ref={this.bottomElement} />
+                        :   
+
+                                <span className="tone" onClick={this.handleMusicClick}></span>
+                           
                     }
-                    <span className="tone" onClick={this.handleMusicClick}></span>
+
+                    <div ref={this.bottomElement} />
+
                 </div>
             </div>
         )

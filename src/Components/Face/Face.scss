@@ -2,6 +2,20 @@
     width: 10%;
     height: 10%;
     display: inline-block;
+    @media screen and (max-width: 900px) {
+        width: 15%;
+        height: 15%;
+        display: block;
+        margin-bottom: 3%;
+    }
+    
+    @media screen and (max-width: 320px) {
+        width: 18%;
+        height: 18%;
+        display: block;
+        margin-bottom: 3%;
+    }
+
     .face {
         background: url('./face2.jpg') center center/cover no-repeat;
         height: 0;
@@ -11,8 +25,8 @@
         border-radius: 50%;
         cursor: pointer;
         box-shadow: 0 0 12px 0 black;
-        animation: faceskew 0.1s step-end 4;
-        animation-delay: 1s;
+        animation: faceskew 0.1s step-end 2;
+        animation-delay: 2s;
     }
 
     .face:hover {
@@ -20,21 +34,23 @@
     }
 
     .face:active {
-        box-shadow: 0 0 3px 0 black;        
+        box-shadow: 0 0 3px 0 black;
     }
 
     @keyframes faceskew {
         0% {
             transform: skewX(0deg);
+            box-shadow: 0 0 12px 0 black;
         }
         50% {
-            transform: skewX(-2deg);
+            transform: skewX(-4deg);
+            box-shadow: 0 0 5px 0 black;
         }
         100% {
             transform: skewX(0deg);
+            box-shadow: 0 0 12px 0 black;
         }
     }
-
 
     .red-eye {
         border-radius: 50%;
@@ -44,12 +60,18 @@
 
         background-color: red;
         position: absolute;
-        left: calc(10% - 0.1%);
-        top: calc(10% - 1.5%);
         -webkit-animation: up-right 1s infinite;
         -moz-animation: up-right 1s infinite;
         -o-animation: up-right 1s infinite;
         animation: up-right 1s infinite;
+        @media screen and (max-width: 600px) {
+            width: 3px;
+            height: 3px;
+        }
+        @media screen and (max-width: 300px) {
+            width: 2px;
+            height: 2px;
+        }
     }
 
     @keyframes up-right {

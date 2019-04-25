@@ -2,8 +2,6 @@ import React from 'react';
 import './Contactinfo.scss';
 import Header from '../Shared/Header/Header';
 import ContactItem from './ContactItem/ContactItem';
-import Music from './Music/Music';
-
 
 class Contactinfo extends React.Component {
     getAge() {
