@@ -15,17 +15,17 @@ class Projects extends React.Component {
         <Project customer="The norwegian goverment pension fund (SPK)" 
                  datestart="01/09/2015"
                  dateend="31/08/2016"
-                 about="Bacon capicola pastrami burgdoggen filet mignon, chuck corned beef. Jerky corned beef buffalo, rump fatback kevin pig chicken ball tip drumstick pancetta. ">
+                 about="Participated in the development of a new loan application system for the members of the SPK. I was also part of a devops team and worked on maintenance of older systems and developing new functionality.">
         </Project>
         <Project customer="The norwegian goverment (Regjeringen)" 
                  datestart="01/03/2014"
                  dateend="01/04/2015"
-                 about="Bacon capicola pastrami burgdoggen filet mignon, chuck corned beef. Jerky corned beef buffalo, rump fatback kevin pig chicken ball tip drumstick pancetta. ">
+                 about="Worked with a team of other developers to create the new regjeringen.no. Had, among other things, responsibility for the migration of the old content database, implementation of new search, import of government publications and the development of several page types.">
         </Project>
         <Project customer="The norwegian parliament (Stortinget)" 
                  datestart="01/08/2012"
                  dateend="01/03/2014"
-                 about="Bacon capicola pastrami burgdoggen filet mignon, chuck corned beef. Jerky corned beef buffalo, rump fatback kevin pig chicken ball tip drumstick pancetta. ">
+                 about="Took part of creating a new intranet for the Norwegian parliament. Developed several page types, integrations against internal systems, various forms and a enterprise search.">
         </Project>
         </div>
         );

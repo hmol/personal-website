@@ -17,11 +17,10 @@
         vertical-align: top;
         position: relative;
         padding: 2%;
-        min-width: 330px;
-        
+
         @media screen and (max-width: 900px) {
           padding: 3%;
-          width: 60%;
+          width: 100%;
           margin-left: 0%;
         }
         @media screen and (max-width: 600px) {
@@ -34,16 +33,8 @@
         }
         .intro, .stats {
             height: 100%;
-            font-size: 20px;
             font-family: c64;
             margin-top: 2%;
-            line-height: 21pt;
-
-            @media screen and (max-width: 900px) {
-              font-size: 17px;
-              line-height: 18pt;
-            }
-
             a {
               color: #00ff00;
               text-decoration-style: underline;              
@@ -54,10 +45,22 @@
               text-shadow: 2px 2px blue;
             }
         }
+        .intro {
+          line-height: 20pt;
+          font-size: 20px;
+          @media screen and (max-width: 900px) {
+            font-size: 15px;
+          }
+        }
 
         .stats {
-            font-size: 84%;
+            line-height: 15pt;
+            font-size: 16px;
+            @media screen and (max-width: 390px) {
+              font-size: 11px;
+            }
         }
+
         color: #00ff00;
         box-shadow: 5px 5px 5px #666;
     }
@@ -73,15 +76,15 @@
       background: blue;
     }
 
-    .stats > div::selection {
+    .stats > p::selection {
       background: blue;
     }
 
-    .stats > div a::selection {
+    .stats > p a::selection {
       background: blue;
     }
 
-    .stats > div a sub::selection {
+    .stats > p a sub::selection {
       background: blue;
     }
 
@@ -120,11 +123,20 @@
         100% { opacity: 1.0; }
       } 
 
-      .stats > div {
+      .stats > p {
         width: 100%;
         white-space:nowrap;
         overflow: hidden;
         visibility: hidden;
+        margin: 0;
+      }
+
+      .stats > div  {
+        width: 100%;
+        white-space:nowrap;
+        overflow: hidden;
+        visibility: hidden;
+        margin: 0;
       } 
 
       @keyframes type{
@@ -145,15 +157,14 @@
 
       $type_time: 2s;
       $type_steps: 50;
-      $type_delay: $type_time - 1;
+      $type_delay: $type_time - 0.6;
 
       .line-0 {
         animation: type $type_time steps($type_steps, end) 1;
-                   //blink-caret $type_time steps($type_steps*4, end) 1;
         animation-fill-mode: forwards;
         animation-delay: 0.1;
       }
-      
+
       .line-1 {
         animation: type $type_time steps($type_steps, end) 1;	
         animation-delay: $type_delay;

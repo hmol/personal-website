@@ -19,11 +19,12 @@
             position: absolute;
             bottom: 0;            
             filter: blur(5px);
-            animation: toneskew 2s step-end 50;
+            animation: toneskew 0.5s step-end infinite;
             // animation-delay: 2.28s;
             @media screen and (max-width: 900px) {
                 position: relative;
                 margin-bottom: 2%;
+                filter: blur(0px);
             }
         }
 

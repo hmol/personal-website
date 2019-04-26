@@ -1,17 +1,16 @@
 import React from 'react';
 import './Header.scss';
 import Face from '../Face/Face';
-
 class Header extends React.Component {
 
     temperatures = [];
 
     constructor(props) {
         super(props);
-        this.state = {introtext: '', displayStats: false, milliseconds: Math.abs(new Date(), new Date(1985, 5, 28)), temperature: "36.51", tempIndex: 0};
+        this.state = {introtext: '', displayStats: false, milliseconds: Math.abs(new Date(), new Date(1985, 5, 28)), temperature: "36.51", tempIndex: 0, audioloops: 0};
         this.handler = this.handler.bind(this);
         this.updateStats = this.updateStats.bind(this);
-    }
+     }
 
     handler() {
         this.setState((state) => ({
@@ -79,26 +78,26 @@ class Header extends React.Component {
             ) : (
                 <div className="header-text">
                     <div className="stats">
-                        <div className="line-0">
+                        <p className="line-0">
                             Carbon based lifeform
-                        </div>
-                        <div className="line-0">
+                        </p>
+                        <p className="line-1">
                             Species: Homo Sapiens
-                        </div>
-                        <div className="line-0">
+                        </p>
+                        <p className="line-2">
                             Subsistence: <a href="https://www.google.com/search?q=C8H10N4O2" target="_blank" rel="noopener noreferrer">
                             C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>
                             </a> 
-                        </div>
-                        <div className="line-0">
+                        </p>
+                        <p className="line-3">
                             Age: { this.state.milliseconds } ms
-                        </div>
-                        <div className="line-0">
+                        </p>
+                        <p className="line-4">
                             Height: 1900 mm
-                        </div>
-                        <div className="line-0">
+                        </p>
+                        <p className="line-5">
                             Core temp: { this.state.temperature } °C
-                        </div>
+                        </p>
                     </div>
                 </div>
             )}

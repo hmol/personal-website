@@ -1,6 +1,5 @@
 import React from 'react';
 import './Face.scss';
-import './face.jpg'
 
 class Face extends React.Component {
 
@@ -33,8 +32,11 @@ class Face extends React.Component {
     render() {
         return (
             <div className="face-container" ref={this.myRef}>
-                <div className="face" onClick={this.props.handler}></div>
-                {this.props.displayStats &&                
+                <div className={(this.props.displayStats ? 'face-terminator' : 'face')} 
+                     onClick={this.props.handler}
+                     title={(this.props.displayStats ? 'Terminator' : 'Henrik')} >
+                </div>
+                {this.props.displayStats &&
                     <div className="red-eye" style={{top: this.state.top, left: this.state.left}}></div>
                 }
             </div>
