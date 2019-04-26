@@ -1,13 +1,22 @@
 import React from 'react';
 import './TechItem.scss';
 import TrackVisibility from 'react-on-screen'; 
+import { checkPropTypes } from 'prop-types';
 
+export interface Props {
+    level: number; 
+    name: string;
+}
 
-class TechItem extends React.Component {
+export interface State {
+    counter: number; 
+}
+
+class TechItem extends React.Component<Props, State> {
 
     maxLevel = 10;
-    dark = [];
-    light = [];
+    dark: Element[] = [];
+    light: Element[] = [];
     levelArray = [
             <div className="cursor-light" key="0"></div>,
             <div className="cursor-light" key="1"></div>,
@@ -21,9 +30,7 @@ class TechItem extends React.Component {
             <div className="cursor-light" key="9"></div>
     ];
 
-    elements;
-
-    constructor(props) {
+    constructor(props: Props) {
         super(props);
         this.state = {
             counter: 0
@@ -36,7 +43,7 @@ class TechItem extends React.Component {
     }
 
     maxlength = 13;
-    getNameWithDots(name) {
+    getNameWithDots(name: string) {
         if(name.length === this.maxlength) {
             return name;
         }

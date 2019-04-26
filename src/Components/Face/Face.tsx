@@ -1,12 +1,13 @@
 import React from 'react';
 import './Face.scss';
 
-class Face extends React.Component {
 
-    constructor(props) {
+class Face extends React.Component<any, any> {
+    myRef: React.RefObject<any> = React.createRef();
+
+    constructor(props: any) {
         super(props);
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-        this.myRef = React.createRef();
         this.state = { top: '', left: '' };
     }
 

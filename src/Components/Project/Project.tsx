@@ -1,7 +1,20 @@
 import React from 'react';
 import './Project.scss';
 
-class Project extends React.Component {
+export interface Props {
+    dateend?: string;
+    datestart: string;
+    url?: string;
+    customer: string;
+    about: string;
+}
+
+class Project extends React.Component<Props, object> {
+    
+    constructor(props: Props) {
+        super(props);
+    }
+
     render() {
         return (
         <div className="project">

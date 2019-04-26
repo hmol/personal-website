@@ -1,7 +1,12 @@
 import React from 'react';
 import './Header.scss';
 
-class Header extends React.Component {
+export interface Props {
+    text: string;    
+}
+
+class Header extends React.Component<Props, any> {
+
     render() {
         return (
         <div className="header">

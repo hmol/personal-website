@@ -1,6 +1,16 @@
 import React from 'react';
 
-class ContactItem extends React.Component {
+export interface Props {
+    url: string;
+    text: string;    
+}
+
+class ContactItem extends React.Component<Props, object> {
+    
+    constructor(props: Props) {
+        super(props);
+    }
+
     render() {
         return (
         <div className="contact-item">

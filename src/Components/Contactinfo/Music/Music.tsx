@@ -2,11 +2,23 @@ import React from 'react';
 import './Music.scss';
 import TrackVisibility from 'react-on-screen'; 
 
-class Music extends React.Component {
-    constructor(props) {
+export interface Props {
+ 
+}
+
+export interface State {
+    displayMusic: boolean;
+}
+
+
+class Music extends React.Component<Props, State> {
+    bottomElement: React.RefObject<any> = React.createRef();
+
+    constructor(props: Props) {
         super(props);
         this.state = {displayMusic: false};
         this.handleMusicClick = this.handleMusicClick.bind(this);
+        // this.bottomElement = React.createRef();
     }
 
     handleMusicClick() {
@@ -16,9 +28,6 @@ class Music extends React.Component {
             this.scrollToBottom();
         });
     }
-    
-    
-    bottomElement = React.createRef();
 
     scrollToBottom = () => {
         this.bottomElement.current.scrollIntoView({ behavior: "smooth" });
@@ -32,9 +41,9 @@ class Music extends React.Component {
                         ? <div className="spotify">
                             <p>I also like music. Here are some of my favourites <span role="img" aria-label="emoji">😎</span></p>
                             <iframe src="https://open.spotify.com/embed/user/hmol_/playlist/4o8JeOveTdtRBXFGFmeKxY" 
-                                    width="300" 
-                                    height="380" 
-                                    allowtransparency="true" 
+                                    width={300}
+                                    height={380}
+                                    allowTransparency={true}
                                     title="spotify-iframe"
                                     allow="encrypted-media">
                             </iframe>

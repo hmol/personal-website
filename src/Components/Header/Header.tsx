@@ -1,30 +1,42 @@
 import React from 'react';
 import './Header.scss';
 import Face from '../Face/Face';
-    class Header extends React.Component {
 
-    temperatures = [];
+export interface State {
+    introtext: string;
+    displayStats: boolean;
+    milliseconds: number;
+    temperature: string;
+    tempIndex: number;
+    audioloops: number;
+}
 
-    constructor(props) {
+
+class Header extends React.Component<any, State> {
+
+    temperatures: string[] = [];
+    updateStatsTimerId: NodeJS.Timeout;
+
+    constructor(props: any) {
         super(props);
-        this.state = {introtext: '', displayStats: false, milliseconds: Math.abs(new Date(), new Date(1985, 5, 28)), temperature: "36.51", tempIndex: 0, audioloops: 0};
+        this.state = {introtext: '', displayStats: false, milliseconds: Math.abs(new Date().getTime() - new Date(1985, 5, 28).getTime()), temperature: "36.51", tempIndex: 0, audioloops: 0};
         this.handler = this.handler.bind(this);
         this.updateStats = this.updateStats.bind(this);
      }
 
     handler() {
-        this.setState((state) => ({
+        this.setState((state: State) => ({
             displayStats: !state.displayStats,
         }), () => {
             if(this.state.displayStats) {
-                this.updateStatsTimerId = setInterval(() => this.updateStats(), 500);         
+                this.updateStatsTimerId = setInterval(() => this.updateStats(), 500);     
             } else {
                 clearInterval(this.updateStatsTimerId);
             }       
         });
     }
 
-    shuffle(a) {
+    shuffle(a: any[]) {
         for (let i = a.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [a[i], a[j]] = [a[j], a[i]];
@@ -55,9 +67,9 @@ import Face from '../Face/Face';
     }
 
     updateStats() {
-        this.setState((state) => {
+        this.setState((state: any) => {
             return {
-                milliseconds: Math.abs(new Date(), new Date(1985, 5, 28)),
+                milliseconds: Math.abs(new Date().getTime() - new Date(1985, 5, 28).getTime()),
                 tempIndex: (state.tempIndex + 1 === this.temperatures.length) ? 0 : ++state.tempIndex,
                 temperature: this.getTemperature()            
             }
