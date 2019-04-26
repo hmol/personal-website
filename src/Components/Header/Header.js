@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.scss';
 import Face from '../Face/Face';
-class Header extends React.Component {
+    class Header extends React.Component {
 
     temperatures = [];
 
