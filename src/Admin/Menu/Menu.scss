@@ -1,0 +1,13 @@
+.admin-menu {
+    background: #c9ddff;
+    height: 50%;
+    width: 10%;
+    margin-top: 10%;
+
+    .menu-item {
+        a {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
