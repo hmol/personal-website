@@ -20,6 +20,7 @@ class Contactinfo extends React.Component {
             <ContactItem text="Mail" url="mailto:molnes@gmail.com"></ContactItem>
             <ContactItem text="LinkedIn" url="https://www.linkedin.com/in/henrikmolnes/"></ContactItem>
             <ContactItem text="Github" url="https://github.com/hmol"></ContactItem>
+            <ContactItem text="Writings" url="https://github.com/hmol/writings"></ContactItem>
             <div className="resume-container">
                 <a href="https://github.com/hmol/Curriculum-Vitae/raw/master/molnes_cv.pdf" className="resume-link">
                     <span className="pdf-icon"></span>

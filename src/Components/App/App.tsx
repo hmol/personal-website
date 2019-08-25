@@ -13,6 +13,7 @@ import Login from '../Login/Login';
 import Adminpanel from '../../Admin/Adminpanel/Adminpanel';
 import Auth from '../../Utils/Auth';
 import Logout from '../Logout/Logout';
+import Writings from '../Writings/Writings';
 // import PrivateRoute from '../../Utils/PrivateRoute.js';
 
 const PrivateRoute = ({component, isAuthenticated, ...rest}: any) => {
@@ -69,4 +70,3 @@ class App extends Component {
 }
 
 export default App;
-
