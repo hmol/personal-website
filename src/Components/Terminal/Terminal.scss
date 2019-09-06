@@ -1,0 +1,55 @@
+
+.terminal {
+	margin-top: 20vh;
+	margin: 0 auto;
+  }
+  
+  .terminal-header {
+	  height: 28px;
+	  background-color: #e4e3e5;
+	  border-radius: 10px 10px 0 0;
+	  display: flex;
+	  justify-content: flex-start;
+	  align-items: center;
+  }
+  
+  .terminal-container {
+	background-color: #5a5d7a;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
+	font-family: Monaco,Consolas,Lucida Console,monospace;
+	padding-bottom: 0.5%;
+	padding-top: 2%;
+  }
+  
+  .terminal-line {
+	margin-bottom: 25px;
+	margin-left: 35px;
+	margin-right: 35px;
+	line-height: 24px;
+  }
+  
+  .terminal-command:before {
+	content: ">\A0";
+  }
+  
+  
+  .terminal-command {
+	color: #f7f7f7;
+  }
+  
+  .terminal-print {
+	color: #e7d184;
+  
+	a { color: #35feff; }
+	a:hover {color: #747fe0; }
+	}
+	
+	.char {
+		background: #f7f7f7;
+		animation: blinker 1.2s linear infinite;
+	}
+	
+	@keyframes blinker {  
+		50% { opacity: 0; }
+	}
