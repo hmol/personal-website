@@ -26,9 +26,12 @@ class Terminal extends React.Component {
 						</div>
 						<div className="terminal-print">
 							["<a href="https://open.spotify.com/embed/user/hmol_/playlist/4o8JeOveTdtRBXFGFmeKxY" 
-							target="_blank" rel="noopener noreferrer">music</a>", "<a href="https://www.imdb.com/list/ls090420886/" target="_blank" rel="noopener noreferrer">movies</a>", "football"]
+							target="_blank" rel="noopener noreferrer">music</a>", "<a href="https://www.imdb.com/list/ls090420886/" target="_blank" rel="noopener noreferrer">movies</a>", "football", "hiking"]
 						</div>
 					</div>
+					<TerminalLine command="henrik.kids.count()"
+												print="2">
+					</TerminalLine>
 			  
 			  <div className="terminal-line">
 					<div className="terminal-command">

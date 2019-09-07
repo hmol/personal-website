@@ -6,6 +6,9 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 40px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding: 0 0px;    
+  }
 }
 
 .header {
@@ -46,5 +49,9 @@ h2:after {
   width: 50px;
 }
 
-
-
+.face {
+  border-radius: 50%;
+  width: 15%;
+  display: block;
+  margin: 0 auto;
+}
