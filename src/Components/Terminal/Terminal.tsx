@@ -15,6 +15,10 @@ class Terminal extends React.Component {
 					<TerminalLine command="henrik.education"
 												print="Bachelor Informatics, Oslo University College (HiO)">
 					</TerminalLine>
+					<TerminalLine command="henrik.resume"
+												print="henrik-cv.pdf"
+												href="https://github.com/hmol/Curriculum-Vitae/raw/master/henrik_cv.pdf	">
+					</TerminalLine>
 
 					<TerminalLine command="henrik.currentLocation"
 												print="59.913868,10.752245"
@@ -29,10 +33,7 @@ class Terminal extends React.Component {
 							target="_blank" rel="noopener noreferrer">music</a>", "<a href="https://www.imdb.com/list/ls090420886/" target="_blank" rel="noopener noreferrer">movies</a>", "football", "hiking"]
 						</div>
 					</div>
-					<TerminalLine command="henrik.kids.count()"
-												print="2">
-					</TerminalLine>
-			  
+
 			  <div className="terminal-line">
 					<div className="terminal-command">
 						<span className="char">

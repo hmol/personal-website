@@ -9,18 +9,14 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <div className="container">
-        
+        <img src={Face} className="face"></img> 
         <div className="header">
-          > Hi! I'm Henrik <span>👋</span>
+        > Hi! I'm Henrik <span>👋</span>
         </div>
-        
-        {/* <img src={Face} className="face"></img>
-         */}
         <div className="intro">
-          I work as a fullstack developer. My main experience is with developing APIs in dotnet/c# with Angular in the frontend. 
-          I also have a lot of experience setting up build and deployment pipelines.
-          Currently I think nodejs, docker and graphql is exciting technologies that I try to learn more about.
-          My current favourite developer environment consists of these vital parts: Ubuntu, Visual Studio Code, Rider, Docker and Git.
+          I work as a fullstack developer. My main experience is with developing REST-APIs in dotnet with Angular in the frontend. 
+          Currently I think nodejs, docker and graphql is exciting technologies that I will try to learn more about.
+          My preferred dev-environment consists of these vital parts: Ubuntu, Visual Studio Code, Rider, Docker and Git.
         </div>
 
 

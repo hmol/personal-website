@@ -10,15 +10,15 @@ class Projects extends React.Component {
             <ProjectItem customer="Cenium" 
                  datestart="09/05/2019"   
                  employer="ITverket"           
-                 text="Is part of a devops team at Cenium a ERP system for hotels built on dotnet."
-		 technologies={['dotnet/c#', 'Azure', 'MSSQL Server', 'TeamCity', 'Octopus Deploy', 'Git', 'powershell', 'NUnit']}>
+                 text="I'm now part of a devops team at Cenium where we are working with an ERP system for hotels."
+		 technologies={['dotnetcore/c#', 'Azure', 'MSSQL Server', 'TeamCity', 'Octopus Deploy', 'Git', 'powershell', 'NUnit']}>
             </ProjectItem>
             <ProjectItem customer="A confidential project" 
                     datestart="01/09/2016"
                     dateend="12/04/2019"
                     employer="ITverket"
-                    text="Worked as a fullstack developer creating a new CRM system for a business in a niche market. I had responsibility for developing a case management system. Development was done in dotnet core and Angular."
-                    technologies={['Angular', 'dotnet/c#', 'Scss', 'mongoDB', 'Google Cloud', 'Bash', 'NServicebus', 'Git', 'Docker', 'MSSQL Server', 'NUnit', 'CircleCI']}>
+                    text="Worked as a fullstack developer creating a new CRM system for a business in a niche market. I had responsibility for developing the case management functions in this system. Development was done in dotnetcore on the REST-api and Angular on the frontend."
+                    technologies={['Angular', 'dotnetcore/c#', 'Scss', 'mongoDB', 'Google Cloud', 'nginx', 'Bash', 'NServicebus', 'Git', 'Docker', 'PostgreSQL', 'NUnit', 'CircleCI']}>
             </ProjectItem>
             <ProjectItem customer="The norwegian goverment pension fund (SPK)" 
                     datestart="01/09/2015"
