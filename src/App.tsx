@@ -24,7 +24,7 @@ const App: React.FC = () => {
 
         <Terminal></Terminal>
         <Projects></Projects>
-        <h2>Thoughts on software development</h2>
+        <h2>Some thoughts on software development</h2>
         <p className="intro-sub">
           Code is often written one time and read a countless times. 
           This is why I like readable code.
@@ -34,10 +34,11 @@ const App: React.FC = () => {
           In my experience these tests will also serve as a form of documentation and force the developer to write readable code. 
         </p>
         <p className="intro-sub">
-          KISS, keep it simple stupid, is my main mantras. 
+          KISS, keep it simple stupid, is my main mantra. 
           This is because it is so easy to do overengineering in software development.
           It is important to remember that simpler is always better. 
-          The goal should always be to reduce complexity as much as possible. 
+          The developer should always think twice before introducing a new pattern.
+          In my opinion the goal should always be to reduce complexity as much as possible.
         </p>
         <Links></Links>
       </div>

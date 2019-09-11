@@ -17,8 +17,8 @@ class Projects extends React.Component {
                     datestart="01/09/2016"
                     dateend="12/04/2019"
                     employer="ITverket"
-                    text="Worked as a fullstack developer creating a new CRM system for a business in a niche market. I had responsibility for developing the case management functions in this system. Development was done in dotnetcore on the REST-api and Angular on the frontend."
-                    technologies={['Google Cloud', 'nginx', 'Docker', 'PostgreSQL', 'Angular', 'dotnetcore/c#', 'Scss', 'mongoDB',  'Bash', 'NServicebus', 'Git', 'NUnit', 'CircleCI']}>
+                    text="Worked as a fullstack developer creating a new CRM system for a business in a niche market. I had responsibility for developing the case management functions in this system. The REST API was built in dotnetcore adhering to the CQRS pattern. On the frontend side we used Angular."
+                    technologies={['Google Cloud', 'nginx', 'Docker', 'CQRS', 'PostgreSQL', 'Angular', 'dotnetcore/c#', 'Scss', 'mongoDB',  'Bash', 'NServicebus', 'Git', 'NUnit', 'CircleCI']}>
             </ProjectItem>
             <ProjectItem customer="The norwegian goverment pension fund (SPK)" 
                     datestart="01/09/2015"
@@ -31,7 +31,7 @@ class Projects extends React.Component {
                     datestart="01/03/2014"
                     dateend="01/04/2015"
                     employer="Making Waves"
-                    text="Worked with a team of other developers to create the new regjeringen.no. Had, among other things, responsibility for the migration of the old content database, implementation of new search, import of government publications and the development of several page types. Technologies used: ASP.NET, Episerver, ElasticSearch"
+                    text="Worked with a team of other developers to create the new regjeringen.no. Had, among other things, responsibility for the migration of the old content database, implementation of new search, import of government publications and the development of several page types."
                     technologies={['Azure', 'Varnish', 'ElasticSearch', 'ASP.NET/c#', 'Episerver', 'MSSQL Server', 'Git', 'xUnit']}>
             </ProjectItem>
             <ProjectItem customer="The norwegian parliament (Stortinget)" 
