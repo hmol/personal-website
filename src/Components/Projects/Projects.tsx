@@ -18,7 +18,7 @@ class Projects extends React.Component {
                     dateend="12/04/2019"
                     employer="ITverket"
                     text="Worked as a fullstack developer creating a new CRM system for a business in a niche market. I had responsibility for developing the case management functions in this system. Development was done in dotnetcore on the REST-api and Angular on the frontend."
-                    technologies={['Angular', 'dotnetcore/c#', 'Scss', 'mongoDB', 'Google Cloud', 'nginx', 'Bash', 'NServicebus', 'Git', 'Docker', 'PostgreSQL', 'NUnit', 'CircleCI']}>
+                    technologies={['Google Cloud', 'nginx', 'Docker', 'PostgreSQL', 'Angular', 'dotnetcore/c#', 'Scss', 'mongoDB',  'Bash', 'NServicebus', 'Git', 'NUnit', 'CircleCI']}>
             </ProjectItem>
             <ProjectItem customer="The norwegian goverment pension fund (SPK)" 
                     datestart="01/09/2015"
@@ -32,7 +32,7 @@ class Projects extends React.Component {
                     dateend="01/04/2015"
                     employer="Making Waves"
                     text="Worked with a team of other developers to create the new regjeringen.no. Had, among other things, responsibility for the migration of the old content database, implementation of new search, import of government publications and the development of several page types. Technologies used: ASP.NET, Episerver, ElasticSearch"
-                    technologies={['ASP.NET/c#', 'Episerver', 'ElasticSearch', 'MSSQL Server', 'Azure', 'Git', 'xUnit']}>
+                    technologies={['Azure', 'Varnish', 'ElasticSearch', 'ASP.NET/c#', 'Episerver', 'MSSQL Server', 'Git', 'xUnit']}>
             </ProjectItem>
             <ProjectItem customer="The norwegian parliament (Stortinget)" 
                     datestart="01/08/2012"
