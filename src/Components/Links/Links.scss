@@ -4,7 +4,7 @@
 	text-align: center;
 	margin-top: 150px;
 	padding-bottom: 200px;
-	display: flex;
+	// display: flex;
 	justify-content: center;
 
 	a {
@@ -13,6 +13,7 @@
 		font-weight: bold;
 		color: #68779d;
 		font-size: 1.5em;
+		margin-left: 2%;
 	}
   
   /* visited link */
@@ -30,6 +31,10 @@
   /* selected link */
   a:active {
 	color: yellow;
-  }
+	}
+	
+	div {
+		margin-bottom: 3%;
+	}
 }
   
