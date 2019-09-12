@@ -14,7 +14,7 @@ const App: React.FC = () => {
         > Hi! I'm Henrik <span>👋</span>
         </div>
         <p className="intro-sub">
-          I work as a fullstack developer, therefore I get satisfaction from having the responsibility for a software feature and developing it "fullstack". All the way from the database up to the GUI (usually html/css). 
+          I work as a fullstack developer. I get satisfaction from having the responsibility for a software feature and developing it all the way from the database up to the GUI (usually html/css). 
         </p>
         <p className="intro-sub">
           My main experience is with developing REST APIs in dotnet with Angular in the frontend. 
@@ -26,20 +26,18 @@ const App: React.FC = () => {
         <Projects></Projects>
         <h2>Some thoughts on software development</h2>
         <p className="intro-sub">
-          Code is often written one time and read a countless times. 
-          This is why I like readable code.
-          What I do not like is extreme TDD where the goal is 100% testcoverage. 
-          It is utopia and impossible to maintain. 
-          On the other hand, I like having unit tests for the most businiss crucial functions in the system.           
-          In my experience these tests will also serve as a form of documentation and force the developer to write readable code. 
+          <h3>Readable code</h3>
+          Code is often written one time and read a countless times. This is why I like readable code.
         </p>
         <p className="intro-sub">
-          KISS, keep it simple stupid, is my main mantra. 
-          This is because it is so easy to do overengineering in software development.
-          It is important to remember that simpler is always better. 
-          The developer should always think twice before introducing a new pattern.
-          In my opinion the goal should always be to reduce complexity as much as possible.
+          <h3>Test driven development</h3>
+          I like having unit tests for the most businiss crucial functions in the system. In my experience these tests will also serve as a form of documentation and force the developer to write readable code. I do not like is extreme TDD where the goal is 100% testcoverage. It is utopia and impossible to maintain.  
         </p>
+        <p className="intro-sub">
+        <h3>KISS</h3>
+          Keep it simple stupid is my main mantra. This is because it is so easy to do overengineering in software development. It is important to remember that simpler is always better. The developer should always think twice before introducing a new pattern.
+        </p>
+
         <Links></Links>
       </div>
     </div>
