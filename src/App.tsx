@@ -14,7 +14,7 @@ const App: React.FC = () => {
         > Hi! I'm Henrik <span>👋</span>
         </div>
         <p className="intro-sub">
-          I work as a fullstack developer. I get satisfaction from having the responsibility for a software feature and developing it all the way from the database up to the GUI (usually html/css). 
+          I work as a fullstack developer and I get satisfaction from having the responsibility for a software feature and developing it all the way from the database up to the GUI (usually html/css). 
         </p>
         <p className="intro-sub">
           My main experience is with developing REST APIs in dotnet with Angular in the frontend. 

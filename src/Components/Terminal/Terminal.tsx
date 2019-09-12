@@ -30,7 +30,7 @@ class Terminal extends React.Component {
 						</div>
 						<div className="terminal-print">
 							["<a href="https://open.spotify.com/embed/user/hmol_/playlist/4o8JeOveTdtRBXFGFmeKxY" 
-							target="_blank" rel="noopener noreferrer">music</a>", "<a href="https://www.imdb.com/list/ls090420886/" target="_blank" rel="noopener noreferrer">movies</a>", "football", "hiking"]
+							target="_blank" rel="noopener noreferrer">music</a>", "movies", "football", "hiking"]
 						</div>
 					</div>
 
