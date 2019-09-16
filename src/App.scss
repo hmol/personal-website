@@ -81,6 +81,11 @@ h2:after {
   }
 }
 
+.face:hover {
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+}
+
 .intro-sub > h3 { 
   color: #747fe0;; 
   font-family: 'Droid serif', serif; 
