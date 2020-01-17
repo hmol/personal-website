@@ -7,8 +7,14 @@ class Projects extends React.Component {
         return (
         <div className="projects">
             <h2>Projects</h2>
+            <ProjectItem customer="Kron" 
+                 datestart="01/12/2019"   
+                 text="I'm currently working as an inhouse developer on the norwegian financial service, Kron."
+		 technologies={['python', 'linux', 'postgres', 'circleci', 'react', 'Git']}>
+            </ProjectItem>
             <ProjectItem customer="Cenium" 
                  datestart="09/05/2019"   
+                 dateend="29/11/2019"
                  employer="ITverket"           
                  text="I'm now part of a devops team at Cenium where we are working with an ERP system for hotels."
 		 technologies={['dotnetcore/c#', 'Azure', 'MSSQL Server', 'TeamCity', 'Octopus Deploy', 'Git', 'powershell', 'NUnit']}>

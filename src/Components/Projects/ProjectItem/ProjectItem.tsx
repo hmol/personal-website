@@ -10,6 +10,10 @@ class ProjectItem extends React.Component<ProjectItemProps> {
 		if(this.props.dateend) {
 			dateString += ' – ' + this.props.dateend;
 		}
+		let employer = ''
+		if(this.props.employer) {
+			employer = 'Employer: ' + this.props.employer;
+		}
 
 		return (
 			<div className="project">
@@ -19,7 +23,7 @@ class ProjectItem extends React.Component<ProjectItemProps> {
 					{dateString}
 				</div>
 				<div className="employer">
-					Employer: {this.props.employer}
+					{employer}
 				</div>
 	
 				<p>{this.props.text}</p>
@@ -36,5 +40,5 @@ type ProjectItemProps = {
 	datestart: string,
 	dateend?: string,
 	technologies: string[],
-	employer: string
+	employer?: string
 }

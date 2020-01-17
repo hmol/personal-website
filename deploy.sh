@@ -1,7 +1,7 @@
 #!/bin/sh
 
 npm run-script build
-cd ../hmol.github.io/
+cd ~/dev/personal/hmol.github.io/
 
 git pull
 rm -r $(ls | grep -v CNAME)
