@@ -10,7 +10,7 @@ class Terminal extends React.Component {
 			</div>
 			<div className="terminal-container">
 					<TerminalLine command="henrik.work"
-												print="Fullstack developer at Kron">
+												print="Developer at Kron">
 					</TerminalLine>
 					<TerminalLine command="henrik.education"
 												print="Bachelor Informatics, Oslo University College (HiO)">
@@ -29,7 +29,7 @@ class Terminal extends React.Component {
 							henrik.interests
 						</div>
 						<div className="terminal-print">
-							["<a href="https://open.spotify.com/embed/user/hmol_/playlist/4o8JeOveTdtRBXFGFmeKxY" target="_blank" rel="noopener noreferrer">music</a>",
+							["<a href="https://open.spotify.com/playlist/4o8JeOveTdtRBXFGFmeKxY?si=2K1fpj8eSoe9svLb6v-1dw" target="_blank" rel="noopener noreferrer">music</a>",
 							 "<a href="https://www.imdb.com/list/ls090420886/" target="_blank" rel="noopener noreferrer">movies</a>", 
 							 "<a href="https://www.imdb.com/list/ls093266815/" target="_blank" rel="noopener noreferrer">series</a>", 
 							 "<a href="https://www.goodreads.com/user/show/87968877-henrik-molnes" target="_blank" rel="noopener noreferrer">books</a>", 

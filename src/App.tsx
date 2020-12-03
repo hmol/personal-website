@@ -14,12 +14,12 @@ const App: React.FC = () => {
         > Hi! I'm Henrik <span>👋</span>
         </div>
         <p className="intro-sub">
-          I work as a fullstack developer. I'm most comfortable in the back-end, but I get satisfaction from having the responsibility for a software feature and developing it all the way from the database up to the GUI. 
+          I work as a developer. I'm most comfortable in the back-end, but I get satisfaction from having the responsibility for a software feature and developing it all the way from the database up to the GUI. 
         </p>
         <p className="intro-sub">
-          My main experience is with developing REST APIs in dotnet with Angular in the frontend. 
+          My main experience is with developing REST APIs (python or c#).
           Currently I think nodejs, docker and graphql are exciting technologies that I will try to learn more about.
-          My preferred dev-environment consists of these vital parts: Ubuntu, Visual Studio Code, Rider, Docker and Git.
+          My preferred dev-environment consists of these vital parts: Ubuntu, Visual Studio Code, Docker and Git.
         </p>
         <Terminal></Terminal>
         <Projects></Projects>
