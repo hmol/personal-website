@@ -7,13 +7,13 @@ body {
   margin: 0 auto;
   padding: 0 40px;
   @media (min-width: 320px) and (max-width: 480px) {
-    padding: 0 0px;    
+    padding: 0 15px;    
   }
 }
 
 .header {
   font-family: Monaco,Consolas,Lucida Console,monospace;
-  font-size: 4.5em;
+  font-size: 3em;
   color: #747fe0;
   margin-bottom: 7%;
 }

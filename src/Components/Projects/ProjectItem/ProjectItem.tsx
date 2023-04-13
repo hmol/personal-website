@@ -26,7 +26,7 @@ class ProjectItem extends React.Component<ProjectItemProps> {
 					{employer}
 				</div>
 	
-				<p>{this.props.text}</p>
+				<p dangerouslySetInnerHTML={{ __html: this.props.text }}></p>
 				<Technologies names={this.props.technologies}></Technologies>
 			</div>
         );  }

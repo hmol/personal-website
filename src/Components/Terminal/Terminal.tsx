@@ -9,7 +9,7 @@ class Terminal extends React.Component {
 			<div className="terminal-header">
 			</div>
 			<div className="terminal-container">
-					<TerminalLine command="henrik.work"
+					<TerminalLine command="henrik.currentWork"
 												print="Developer at Kron">
 					</TerminalLine>
 					<TerminalLine command="henrik.education"

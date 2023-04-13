@@ -14,27 +14,28 @@ const App: React.FC = () => {
         > Hi! I'm Henrik <span>👋</span>
         </div>
         <p className="intro-sub">
-          I work as a developer. I'm most comfortable in the back-end, but I get satisfaction from having the responsibility for a software feature and developing it all the way from the database up to the GUI. 
+          I work as a developer and I like to solve problems using technology.
+          I'm most comfortable in the back-end, but will get satisfaction from having the responsibility 
+          for a software feature and developing it all the way from the database up to the GUI.
         </p>
         <p className="intro-sub">
-          My main experience is with developing REST APIs (python or c#).
-          Currently I think nodejs, docker and graphql are exciting technologies that I will try to learn more about.
+          Most of my work experience the latest years has been related to REST APIs and also integration with other external systems, using python or C#.
           My preferred dev-environment consists of these vital parts: Ubuntu, Visual Studio Code, Docker and Git.
         </p>
         <Terminal></Terminal>
         <Projects></Projects>
         <h2>Some thoughts on software development</h2>
-        <p className="intro-sub">
+        <p className="intro-sub"> 
           <h3>Readable code</h3>
           Code is often written one time and read a countless times. This is why I like readable code.
         </p>
         <p className="intro-sub">
           <h3>Test driven development</h3>
-          I like having unit tests for the most businiss crucial functions in the system. In my experience these tests will also serve as a form of documentation and force the developer to write readable code. I do not like is extreme TDD where the goal is 100% testcoverage. It is utopia and impossible to maintain.  
+          I like having unit tests for the most businiss crucial functions in the system. In my experience these tests will also serve as a form of documentation and force the developer to write readable code. I do not like extreme TDD where the goal is 100% testcoverage. It is utopia and impossible to maintain.
         </p>
         <p className="intro-sub">
         <h3>KISS</h3>
-          Keep it simple stupid is my main mantra. This is because it is so easy to do overengineering in software development. It is important to remember that simpler is always better. The developer should always think twice before introducing a new pattern.
+          Keep it simple stupid is my main mantra. This is because it is so easy to do overengineering in software development. I will always try to start out simple and then do iterations, refractor and extend the code if necessary.
         </p>
 
         <Links></Links>
