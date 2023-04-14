@@ -17,7 +17,7 @@ class Projects extends React.Component {
                   creating a fund marketplace where customers can choose from over 500 funds instead of only a set of predefined packages.
                 <br><br>
                 Since the mantra in Kron always has been to put the customer first, we are quite proud of the fact that the app is the <a href='https://www.kode24.no/artikkel/kron-slar-tilbake-mot-app-kritikken-fra-shortcut-han-bommer/78883070'>highest rated financial app in Norway</a>."
-		 technologies={['python', 'pytest', 'linux', 'postgres', 'circleci', 'celery', 'arq', 'nomad', 'bash', 'consul', 'metabase', 'retool', 'react', 'react-native', 'Git', 'BankID', 'Signicat/OIDC']}>
+		 technologies={['python', 'pytest', 'linux', 'postgres', 'circleci', 'celery', 'arq', 'linode', 'redis', 'nomad', 'bash', 'consul', 'metabase', 'retool', 'react', 'react-native', 'Git', 'BankID', 'Signicat/OIDC']}>
             </ProjectItem>
             <ProjectItem customer="Cenium" 
                  datestart="09/05/2019"   
@@ -31,7 +31,7 @@ class Projects extends React.Component {
                     dateend="12/04/2019"
                     employer="ITverket"
                     text="Worked as a fullstack developer creating a new CRM system for a business in a niche market. Amongst other things I had responsibility for developing the case management functions in this system. The REST API was built in dotnetcore adhering to the CQRS pattern. On the frontend side we used Angular."
-                    technologies={['Google Cloud', 'nginx', 'Docker', 'CQRS', 'PostgreSQL', 'Angular', 'dotnet', 'C#', 'Scss', 'mongoDB', 'NServicebus', 'Git', 'NUnit', 'CircleCI']}>
+                    technologies={['Google Cloud', 'nginx', 'Docker', 'CQRS', 'PostgreSQL', 'Angular', 'dotnet', 'C#', 'Scss', 'mongoDB', 'NServicebus', 'Git', 'NUnit', 'CircleCI', 'microservices']}>
             </ProjectItem>
             <ProjectItem customer="The norwegian goverment pension fund (SPK)" 
                     datestart="01/09/2015"

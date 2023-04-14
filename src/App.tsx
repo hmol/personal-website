@@ -15,7 +15,7 @@ const App: React.FC = () => {
         </div>
         <p className="intro-sub">
           I work as a developer and I like to solve problems using technology.
-          I'm most comfortable in the back-end, but will get satisfaction from having the responsibility 
+          I'm most comfortable in the back-end side. That being said, I do get satisfaction from having the responsibility 
           for a software feature and developing it all the way from the database up to the GUI.
         </p>
         <p className="intro-sub">

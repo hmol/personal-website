@@ -12,7 +12,6 @@ class Links extends React.Component  {
 					<a href="mailto:molnes@gmail.com">Mail</a>
 					<a href="https://www.linkedin.com/in/henrikmolnes">LinkedIn</a>
 					<a href="https://github.com/hmol">Github</a>
-					<a href="https://github.com/hmol/writings">Writings</a>
 				</div>
 		  	</div>
         );

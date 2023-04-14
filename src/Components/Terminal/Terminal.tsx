@@ -16,7 +16,7 @@ class Terminal extends React.Component {
 												print="Bachelor Informatics, Oslo University College (HiO)">
 					</TerminalLine>
 					<TerminalLine command="henrik.resume"
-												print="henrik-cv.pdf"
+												print="henrik-cv-NO.pdf"
 												href="https://github.com/hmol/Curriculum-Vitae/raw/master/henrik_cv.pdf	">
 					</TerminalLine>
 
