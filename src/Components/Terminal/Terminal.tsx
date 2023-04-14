@@ -33,8 +33,7 @@ class Terminal extends React.Component {
 							 "<a href="https://www.imdb.com/list/ls090420886/" target="_blank" rel="noopener noreferrer">movies</a>", 
 							 "<a href="https://www.imdb.com/list/ls093266815/" target="_blank" rel="noopener noreferrer">series</a>", 
 							 "<a href="https://www.goodreads.com/user/show/87968877-henrik-molnes" target="_blank" rel="noopener noreferrer">books</a>", 
-							 "hiking"
-							]
+							 "hiking"]
 						</div>
 					</div>
 

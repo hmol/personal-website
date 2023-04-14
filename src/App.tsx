@@ -30,14 +30,15 @@ const App: React.FC = () => {
           Code is often written one time and read a countless times. This is why I like readable code.
         </p>
         <p className="intro-sub">
-          <h3>Test driven development</h3>
-          I like having unit tests for the most businiss crucial functions in the system. In my experience these tests will also serve as a form of documentation and force the developer to write readable code. I do not like extreme TDD where the goal is 100% testcoverage. It is utopia and impossible to maintain.
+          <h3>Tests</h3>
+          Most of the code should ideally have good tests, and I like it when the tests are run as a part of the CI pipeline. 
+          In my experience tests will also serve as a form of documentation to new developers and thus make the code more readable. 
+          I do not like extreme TDD where the goal is 100% testcoverage. It is utopia and impossible to maintain. 
         </p>
         <p className="intro-sub">
         <h3>KISS</h3>
           Keep it simple stupid is my main mantra. This is because it is so easy to do overengineering in software development. I will always try to start out simple and then do iterations, refractor and extend the code if necessary.
         </p>
-
         <Links></Links>
       </div>
     </div>
