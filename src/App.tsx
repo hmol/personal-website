@@ -33,7 +33,6 @@ const App: React.FC = () => {
           <h3>Tests</h3>
           Most of the code should ideally have good tests, and I like it when the tests are run as a part of the CI pipeline. 
           In my experience tests will also serve as a form of documentation to new developers and thus make the code more readable. 
-          I do not like extreme TDD where the goal is 100% testcoverage. It is utopia and impossible to maintain. 
         </p>
         <p className="intro-sub">
         <h3>KISS</h3>
