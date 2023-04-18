@@ -22,6 +22,6 @@ class TerminalLine  extends React.Component<TerminalLineProps> {
 export default TerminalLine;
 type TerminalLineProps = {
 	command: string,
-	print: string,
+	print: string | Number,
 	href?: string
 }
