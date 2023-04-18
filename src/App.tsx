@@ -19,8 +19,8 @@ const App: React.FC = () => {
           for a software feature and developing it all the way from the database up to the GUI.
         </p>
         <p className="intro-sub">
-          Most of my work experience the latest years has been related to REST APIs and also integration with other external systems, using python or C#.
-          My preferred dev-environment consists of these vital parts: Ubuntu, Visual Studio Code, Docker and Git.
+          Most of my work experience the latest years has been related to REST APIs and also integration with other external systems, using <b>Python</b> and <b>C#</b>.
+          My preferred dev-environment usually consists of these vital parts: Ubuntu, Visual Studio Code, Docker and Git.
         </p>
         <Terminal></Terminal>
         <Projects></Projects>
